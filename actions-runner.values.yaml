@@ -1,0 +1,2 @@
+image:
+  actionsRunnerRepositoryAndTag: ghcr.io/alehechka/actions-runner:latest
