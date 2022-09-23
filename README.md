@@ -1,4 +1,4 @@
-# actions-runner-controller
+# actions-runner
 
 Custom implementation of the `actions-runner` image from [actions-runner-controller](https://github.com/actions-runner-controller/actions-runner-controller).
 
