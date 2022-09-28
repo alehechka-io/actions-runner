@@ -18,6 +18,6 @@ helm repo add actions-runner-controller https://actions-runner-controller.github
 
 helm upgrade --install --wait \
     --namespace actions-runner-system --create-namespace \
-    -f https://raw.githubusercontent.com/alehechka/actions-runner-controller/main/actions-runner.values.yaml \
+    -f https://raw.githubusercontent.com/alehechka-io/actions-runner-controller/main/actions-runner.values.yaml \
     actions-runner-controller actions-runner-controller/actions-runner-controller
 ```
