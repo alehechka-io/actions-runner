@@ -17,6 +17,7 @@ RUN echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/g
 RUN sudo apt-get update
 RUN sudo apt-get install -y \
         gettext \
+        moreutils \
         gh
     
 # Cleanup after install
