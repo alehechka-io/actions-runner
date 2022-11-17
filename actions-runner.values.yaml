@@ -1,2 +1,2 @@
 image:
-  actionsRunnerRepositoryAndTag: ghcr.io/alehechka-io/actions-runner:latest
+  actionsRunnerRepositoryAndTag: ghcr.io/lockerstock/actions-runner:latest
