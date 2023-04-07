@@ -128,5 +128,3 @@ subjects:
   - kind: ServiceAccount
     name: actions-runner
     namespace: actions-runner-system
----
-
