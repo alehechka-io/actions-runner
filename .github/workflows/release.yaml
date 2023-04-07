@@ -1,6 +1,7 @@
 name: Release Tag
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - main
