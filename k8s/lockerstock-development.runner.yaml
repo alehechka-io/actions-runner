@@ -1,7 +1,7 @@
 apiVersion: actions.summerwind.dev/v1alpha1
 kind: RunnerDeployment
 metadata:
-  name: lockerstock-staging
+  name: lockerstock-development
   namespace: actions-runner-system
 spec:
   template:
@@ -12,21 +12,21 @@ spec:
         - k8s
         - linux
         - x64
-        - staging
+        - development
 ---
 apiVersion: actions.summerwind.dev/v1alpha1
 kind: HorizontalRunnerAutoscaler
 metadata:
-  name: lockerstock-staging-autoscaler
+  name: lockerstock-development-autoscaler
 spec:
   # Runners in the targeted RunnerDeployment won't be scaled down
   # for 5 minutes instead of the default 10 minutes now
   scaleDownDelaySecondsAfterScaleOut: 300
   scaleTargetRef:
     kind: RunnerDeployment
-    name: lockerstock-staging
+    name: lockerstock-development
   minReplicas: 1
-  maxReplicas: 5
+  maxReplicas: 10
   metrics:
     - type: PercentageRunnersBusy
       scaleUpThreshold: '0.75'
